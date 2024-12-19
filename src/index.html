@@ -2,12 +2,55 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <title>CHURCHLANDINGPAGE</title>
+  <title>Church Landing Page</title>
   <base href="/">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <link rel="icon" type="image/x-icon" href="assets\images\Eglise_Evangelique_du_Cameroun__Logo_-removebg.png">
+
+
+    <!--====== AOS CSS ======-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.1/aos.css">
+  
+    <!-- Other CSS files -->
+    <link rel="stylesheet" href="assets/css/animate.css">
+    <link rel="stylesheet" href="assets/css/lineicons.css">
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/default.css">
+    <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
   <app-root></app-root>
+
+    <!--====== Jquery js ======-->
+    <script src="assets/js/vendor/jquery-1.12.4.min.js"></script>
+    <script src="assets/js/vendor/modernizr-3.7.1.min.js"></script>
+    
+    <!--====== Bootstrap js ======-->
+    <script src="assets/js/popper.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    
+  <!--====== AOS js ======-->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.1/aos.js"></script>
+  
+  <script>
+    $(document).ready(function() {
+      AOS.init({
+        duration: 1300,       // Animation duration
+        once: false,          // Allow animation to trigger multiple times
+        mirror: true,         // Mirror animation when scrolling up
+        startEvent: 'DOMContentLoaded',  // Start on DOM content loaded
+        offset: 120,          // Trigger animations when the element is 120px in view
+      });
+    });
+  </script>
+  
+  
+    
+    <!--====== Scrolling Nav js ======-->
+    <script src="assets/js/jquery.easing.min.js"></script>
+    <script src="assets/js/scrolling-nav.js"></script>
+    
+    <!--====== Main js ======-->
+    <script src="assets/js/main.js"></script>
 </body>
 </html>

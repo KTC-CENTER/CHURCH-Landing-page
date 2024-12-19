@@ -32,9 +32,15 @@
             "styles": [
               "src/styles.scss",
               "node_modules/primeng/resources/themes/lara-light-blue/theme.css",
-              "node_modules/primeng/resources/primeng.min.css"
+              "node_modules/primeng/resources/primeng.min.css",
+              "node_modules/bootstrap/dist/css/bootstrap.min.css"
             ],
-            "scripts": []
+            "scripts": [
+              "node_modules/jquery/dist/jquery.min.js",
+              "node_modules/@popperjs/core/dist/umd/popper.min.js",
+              "node_modules/bootstrap/dist/js/bootstrap.min.js",
+              "src/assets/js/scrolling-nav.js" 
+            ]
           },
           "configurations": {
             "production": {
@@ -67,10 +73,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "browserTarget": "CHURCH-LANDING-PAGE:build:production"
+              "buildTarget": "CHURCH-LANDING-PAGE:build:production"
             },
             "development": {
-              "browserTarget": "CHURCH-LANDING-PAGE:build:development"
+              "buildTarget": "CHURCH-LANDING-PAGE:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -78,7 +84,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "CHURCH-LANDING-PAGE:build"
+            "buildTarget": "CHURCH-LANDING-PAGE:build"
           }
         },
         "test": {
