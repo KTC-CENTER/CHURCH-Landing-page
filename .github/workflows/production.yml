@@ -1,0 +1,38 @@
+name: ChURCH LQNDING
+
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  cache-dependencies:
+    runs-on: ubuntu-latest
+    steps:
+      - name: ⚡️ Set up Node.js 20
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+  build-and-deploy:
+    needs: cache-dependencies
+    runs-on: ubuntu-latest
+    steps:
+      - name: 🚚 Get the latest code
+        uses: actions/checkout@v4
+
+
+      - name: 🔨 Build the project
+        run: |
+          npm install -g @angular/cli@16
+          npm install
+          ng build --configuration=production
+        
+      - name: 📂 Sync files
+        uses: SamKirkland/FTP-Deploy-Action@v4.3.5
+        with:
+          server:  church-digital.net
+          username: adminktc
+          password: ${{ secrets.ftp_password_production }}
+          local-dir: ./BUILD/
