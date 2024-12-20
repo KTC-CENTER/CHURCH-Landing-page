@@ -32,7 +32,8 @@ jobs:
       - name: 📂 Sync files
         uses: SamKirkland/FTP-Deploy-Action@v4.3.5
         with:
-          server:  church-digital.net
+          server:  ftp.church-digital.net
           username: adminktc
           password: ${{ secrets.ftp_password_production }}
+          protocol: ftps 
           local-dir: ./BUILD/
