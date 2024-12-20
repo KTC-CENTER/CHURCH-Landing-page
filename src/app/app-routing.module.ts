@@ -4,10 +4,10 @@ import { HomeComponent } from './home/home.component';
 import { NavbarComponent } from './navbar/navbar.component';
 
 const routes: Routes = [
-  { path: '', redirectTo: 'home', pathMatch: 'full' },
+  { path: '', redirectTo: '', pathMatch: 'full' },
   
-  { path: 'home', component: HomeComponent },
-  { path: 'navbar', component: NavbarComponent },
+  { path: '', component: HomeComponent },
+
 ];
 
 
