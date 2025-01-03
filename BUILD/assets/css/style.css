@@ -1014,12 +1014,10 @@ p {
       .shape-1 {
         z-index: -1; 
         position: relative; 
-        margin-bottom: -103px;
       }
       
       .shape-2 {
         z-index: 1;
-        position: absolute; 
         top: 0; 
         left: 0;
         width: 100%; 
@@ -1056,6 +1054,18 @@ p {
           }
         }
       }
+ .text-sec{
+  color: #ffffff;
+  width:60%;
+  text-align: center;
+ } 
+ @media (max-width: 767px) {
+  .text-sec{
+    color: #ffffff;
+    width:95%;
+    text-align: center;
+   } 
+ }    
 .header-hero-content {
   position: relative;
   z-index: 9; }
@@ -1356,7 +1366,6 @@ margin-left: 40px;}
 .download-area .download-image {
   padding-top: 60px;
   padding-bottom: 40px;
-  padding-right: 60px;
   position: relative; }
   @media (max-width: 767px) {
     .download-area .download-image {
