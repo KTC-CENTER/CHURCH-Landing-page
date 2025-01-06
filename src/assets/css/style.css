@@ -1166,6 +1166,36 @@ p {
     transform: scale(1.4);
     opacity: 0; } }
 
+ .fxn-header{
+  display: flex;
+  justify-content: center;
+   font-weight: 600;
+   font-size: 48px;
+ } 
+ 
+ @media only screen and (max-width: 767px) { 
+  .fxn-header{
+    display: flex;
+    justify-content: center;
+     font-weight: 600;
+     font-size: 26px;
+   } 
+   
+ }
+
+ .fxn-text{
+  color: #637381;
+  width:50%;
+  text-align: center;
+ }  
+ @media only screen and (max-width: 767px) { 
+  .fxn-text{
+    color: #637381;
+    width:100%;
+    text-align: center;
+   }  
+ }
+
 .header-image {
   padding-top: 20px;
   position: relative;
@@ -1320,7 +1350,7 @@ margin-left: 40px;}
     @media (max-width: 767px) {
       .about-image .about-shape {
         width: 294px;
-        left: -8px;
+        left: 8px;
         height: 294px; } }
         .about-image .about-shape::before {
           position: absolute;
@@ -1354,6 +1384,7 @@ margin-left: 40px;}
           .about-image .app {
             max-width: 190px;
             border-radius: 25px;
+            margin-left: 10px;
             top: 60px; } }
 
 .about-content .main-btn {
@@ -1369,8 +1400,7 @@ margin-left: 40px;}
   position: relative; }
   @media (max-width: 767px) {
     .download-area .download-image {
-      padding-left: 20px;
-      padding-right: 20px; } }
+      padding-left: 20px;} }
       .download-area .download-image .image {
         border-radius: 50px;
         max-width: 100%;
@@ -1389,11 +1419,23 @@ margin-left: 40px;}
     top: 80px;
     left: -50px;
     z-index: -1; }
+    @media (max-width: 767px) {
+      .download-area .download-image .download-shape-1 {
+        top: 46px;
+        left: -86px;
+        z-index: -1; }
+    }
   .download-area .download-image .download-shape-2 {
     position: absolute;
     bottom: -44px;
     right: 45px;
     z-index: -1; }
+    @media (max-width: 767px) {
+      .download-area .download-image .download-shape-2 {
+        bottom: -81px;
+        right: 1px;
+        z-index: -1; }
+    }
 
 .download-content .download-title {
   font-size: 30px;
